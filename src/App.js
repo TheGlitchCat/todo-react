@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
+import AddItem from './components/AddItem';
 
 class App extends Component{
   state = {
@@ -42,16 +43,37 @@ class App extends Component{
     })
   }
 
+  // Adding new Item
+
+  addItem = (title) => {
+    const newItem = {
+      id: 4,
+      title,
+      completed: false
+    }
+
+    this.setState({
+      todos: [...this.state.todos, newItem]
+    });
+
+  }
+
   render(){
     return (
       //console.log(this.state.todos),
       <div className="App">
         
-        <Header />
+        <div className="container">
+          <Header />
 
-        <Todos todos = {this.state.todos} 
-               markComplete = {this.markComplete}
-               delTodo = {this.delTodo}/>
+          <Todos todos = {this.state.todos} 
+                markComplete = {this.markComplete}
+                delTodo = {this.delTodo}/>
+
+          <AddItem addItem = {this.addItem} />
+        </div>
+
+        
       </div>
     );  
   }
