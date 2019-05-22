@@ -7,15 +7,9 @@ cd .\todo
 npm start
 ```
 
-'''
-
-npm start
-
-'''
-
 Open [http://localhost:3000](http://localhost:3000)
 
-##Credits:
+## Credits:
 [Traversy Media](https://www.youtube.com/watch?v=sBws8MSXN7A)
 
 
