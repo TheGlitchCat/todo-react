@@ -1,6 +1,12 @@
 # Todo-React App
 This is my first react application
 
+```
+git clone https://github.com/Dreivko/todo-react.git
+cd .\todo
+npm start
+```
+
 '''
 
 npm start
