@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 
 export class AddItem extends Component {
     
@@ -34,6 +35,11 @@ export class AddItem extends Component {
         )
     }
     
+}
+
+// PropTypes
+AddItem.propTypes = {
+    addItem: PropTypes.func.isRequired
 }
 
 export default AddItem
