@@ -4,7 +4,8 @@ This is my first react application
 ```
 git clone https://github.com/Dreivko/todo-react.git
 cd .\todo
-npm start
+npm install
+npm start or ng serve
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
